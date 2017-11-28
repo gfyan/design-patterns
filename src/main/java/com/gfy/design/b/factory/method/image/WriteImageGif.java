@@ -1,7 +1,5 @@
 package com.gfy.design.b.factory.method.image;
 
-import com.gfy.design.b.factory.method.image.WriteImage;
-
 /**
  * @author gfy
  * <p>

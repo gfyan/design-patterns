@@ -1,7 +1,5 @@
 package com.gfy.design.c.abstractfactory.interfaceC;
 
-import com.gfy.design.c.abstractfactory.interfaceC.InterfaceController;
-
 /**
  * @author gfy
  */
