@@ -6,12 +6,18 @@ import com.gfy.design.hbridge.file.TxtWriteFile;
 import com.gfy.design.hbridge.file.WriteFile;
 
 /**
- * @author gfy
+ * 桥接模式定义：
+ * 将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是
+ * 一种对象结构型模式，又称为柄体(Handle and Body)模式或接口(Interface)模式。
  * <p>
- * 客户端 这是桥接模式用例代码，用例详情：
  * <p>
- * 要求实现一个数据转换工具，可以将数据库中的数据转换成多种文件格式，
+ * <p>
+ * 客户端 这是桥接模式用例代码。
+ * <p>
+ * 用例详情：要求实现一个数据转换工具，可以将数据库中的数据转换成多种文件格式，
  * 例如txt、xml、pdf等格式，同时该工具需要支持多种不同的数据库。
+ *
+ * @author gfy
  */
 public class Client {
 
