@@ -1,12 +1,14 @@
-package com.gfy.design.icomposite;
+package com.gfy.design.icomposite.composite;
+
+import com.gfy.design.icomposite.component.CompanyComposite;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 公司技术部门类 容器构建
+ *
  * @author gfy
- * <p>
- * 公司技术部门类
  */
 public class DepartmentCompanyComposite extends CompanyComposite {
 

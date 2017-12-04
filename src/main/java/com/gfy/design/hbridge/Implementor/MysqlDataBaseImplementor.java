@@ -1,11 +1,11 @@
-package com.gfy.design.hbridge.database;
+package com.gfy.design.hbridge.Implementor;
 
 /**
  * @author gfy
  * <p>
  * mysql数据库操作实现类
  */
-public class MysqlDataBase implements DataBase {
+public class MysqlDataBaseImplementor implements DataBaseImplementor {
 
     @Override
     public String selectInfo() {

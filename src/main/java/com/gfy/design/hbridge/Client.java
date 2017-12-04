@@ -1,9 +1,9 @@
 package com.gfy.design.hbridge;
 
-import com.gfy.design.hbridge.database.DataBase;
-import com.gfy.design.hbridge.database.MongoDbDataBase;
-import com.gfy.design.hbridge.file.TxtWriteFile;
-import com.gfy.design.hbridge.file.WriteFile;
+import com.gfy.design.hbridge.Implementor.DataBaseImplementor;
+import com.gfy.design.hbridge.Implementor.MongoDbDataBaseImplementor;
+import com.gfy.design.hbridge.Abstraction.TxtWriteFileAbstraction;
+import com.gfy.design.hbridge.Abstraction.WriteFileAbstraction;
 
 /**
  * 桥接模式定义：
@@ -23,9 +23,9 @@ public class Client {
 
     public static void main(String[] args) {
         //创建数据库连接工具
-        DataBase dataBase = new MongoDbDataBase();
+        DataBaseImplementor dataBase = new MongoDbDataBaseImplementor();
         //创建写入文件类
-        WriteFile writeFile = new TxtWriteFile();
+        WriteFileAbstraction writeFile = new TxtWriteFileAbstraction();
         writeFile.setDataBase(dataBase);
 
         //执行写入操作

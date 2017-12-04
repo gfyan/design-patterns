@@ -1,13 +1,11 @@
-package com.gfy.design.hbridge.file;
-
-import com.gfy.design.hbridge.database.DataBase;
+package com.gfy.design.hbridge.Abstraction;
 
 /**
  * @author gfy
  * <p>
  * txt文件写入实现类
  */
-public class TxtWriteFile extends WriteFile {
+public class TxtWriteFileAbstraction extends WriteFileAbstraction {
 
     @Override
     public void write() {

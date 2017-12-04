@@ -1,7 +1,6 @@
 package com.gfy.design.gadapter.database;
 
-import com.gfy.design.gadapter.EncryptingAdapter;
-import com.gfy.design.gadapter.util.EncryptingUtil;
+import com.gfy.design.gadapter.target.EncryptingUtil;
 
 /**
  * @author gfy
@@ -9,10 +8,14 @@ import com.gfy.design.gadapter.util.EncryptingUtil;
  * 数据库操作类
  */
 public class DataBaseOperation {
+    EncryptingUtil encryptingUtil;
 
-    public void insertDataBase(String source) {
-        EncryptingUtil encryptingUtil = new EncryptingAdapter();
-        encryptingUtil.encode("12321", "md5");
+    public DataBaseOperation(EncryptingUtil encryptingAdapter) {
+        this.encryptingUtil = encryptingAdapter;
+    }
+
+    public void insertDataBase(String source, String encodeMethod) {
+        encryptingUtil.encode(source, encodeMethod);
         System.out.println("数据插入数据库中");
     }
 

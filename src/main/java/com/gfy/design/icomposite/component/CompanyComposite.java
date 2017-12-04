@@ -1,9 +1,9 @@
-package com.gfy.design.icomposite;
+package com.gfy.design.icomposite.component;
 
 /**
  * @author gfy
  * <p>
- * 公司抽象类
+ * 公司抽象类 抽象构建
  */
 public abstract class CompanyComposite {
 

@@ -1,4 +1,4 @@
-package com.gfy.design.gadapter.exterior;
+package com.gfy.design.gadapter.adaptee;
 
 /**
  * @author gfy

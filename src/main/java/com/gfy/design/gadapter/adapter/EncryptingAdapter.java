@@ -1,7 +1,7 @@
-package com.gfy.design.gadapter;
+package com.gfy.design.gadapter.adapter;
 
-import com.gfy.design.gadapter.exterior.ExteriorEncrypting;
-import com.gfy.design.gadapter.util.EncryptingUtil;
+import com.gfy.design.gadapter.adaptee.ExteriorEncrypting;
+import com.gfy.design.gadapter.target.EncryptingUtil;
 
 /**
  * @author gfy
@@ -12,13 +12,16 @@ public class EncryptingAdapter extends EncryptingUtil {
 
     private ExteriorEncrypting exteriorEncrypting;
 
+    public EncryptingAdapter(ExteriorEncrypting exteriorEncrypting) {
+        this.exteriorEncrypting = exteriorEncrypting;
+    }
+
     @Override
     public String encode(String source, String flag) {
-        exteriorEncrypting = new ExteriorEncrypting();
         if ("md5".equals(flag)) {
-            return exteriorEncrypting.md5(source);
+            return this.exteriorEncrypting.md5(source);
         } else if ("base64".equals(flag)) {
-            return exteriorEncrypting.base64(source);
+            return this.exteriorEncrypting.base64(source);
         } else {
             return super.encode(source);
         }

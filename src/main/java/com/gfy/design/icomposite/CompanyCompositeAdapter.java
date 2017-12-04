@@ -1,5 +1,7 @@
 package com.gfy.design.icomposite;
 
+import com.gfy.design.icomposite.component.CompanyComposite;
+
 /**
  * @author gfy
  * <p>

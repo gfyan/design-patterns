@@ -1,13 +1,11 @@
-package com.gfy.design.hbridge.file;
-
-import com.gfy.design.hbridge.database.DataBase;
+package com.gfy.design.hbridge.Abstraction;
 
 /**
  * @author gfy
  * <p>
  * pdf文件写入实现类
  */
-public class PdfWriteFile extends WriteFile {
+public class PdfWriteFileAbstraction extends WriteFileAbstraction {
 
 
     @Override

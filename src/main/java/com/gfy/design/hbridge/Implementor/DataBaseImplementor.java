@@ -1,11 +1,11 @@
-package com.gfy.design.hbridge.database;
+package com.gfy.design.hbridge.Implementor;
 
 /**
  * @author gfy
  * <p>
  * 数据库抽象类
  */
-public interface DataBase {
+public interface DataBaseImplementor {
 
 
     /**

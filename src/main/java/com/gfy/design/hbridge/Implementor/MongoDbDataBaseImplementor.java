@@ -1,11 +1,11 @@
-package com.gfy.design.hbridge.database;
+package com.gfy.design.hbridge.Implementor;
 
 /**
  * @author gfy
  * <p>
  * MongoDb数据库操作实现类
  */
-public class MongoDbDataBase implements DataBase {
+public class MongoDbDataBaseImplementor implements DataBaseImplementor {
 
     @Override
     public String selectInfo() {

@@ -1,9 +1,11 @@
-package com.gfy.design.icomposite;
+package com.gfy.design.icomposite.leaf;
+
+import com.gfy.design.icomposite.CompanyCompositeAdapter;
 
 /**
+ * 普通员工类 叶子构建
+ *
  * @author gfy
- * <p>
- * 普通员工类
  */
 public class StaffMemberCompany extends CompanyCompositeAdapter {
 

@@ -1,5 +1,9 @@
 package com.gfy.design.icomposite;
 
+import com.gfy.design.icomposite.component.CompanyComposite;
+import com.gfy.design.icomposite.composite.DepartmentCompanyComposite;
+import com.gfy.design.icomposite.leaf.StaffMemberCompany;
+
 /**
  * 组合模式定义：
  * 组合多个对象形成树形结构以表示具有“整体—部分”关系的层

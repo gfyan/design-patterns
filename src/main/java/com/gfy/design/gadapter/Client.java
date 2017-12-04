@@ -1,6 +1,9 @@
 package com.gfy.design.gadapter;
 
+import com.gfy.design.gadapter.adaptee.ExteriorEncrypting;
+import com.gfy.design.gadapter.adapter.EncryptingAdapter;
 import com.gfy.design.gadapter.database.DataBaseOperation;
+import com.gfy.design.gadapter.target.EncryptingUtil;
 
 /**
  * 适配器模式定义：
@@ -23,8 +26,9 @@ import com.gfy.design.gadapter.database.DataBaseOperation;
 public class Client {
 
     public static void main(String[] args) {
-        DataBaseOperation dataBaseOperation = new DataBaseOperation();
-        dataBaseOperation.insertDataBase("321321321");
+        EncryptingUtil encryptingUtil = new EncryptingAdapter(new ExteriorEncrypting());
+        DataBaseOperation dataBaseOperation = new DataBaseOperation(encryptingUtil);
+        dataBaseOperation.insertDataBase("321321321", "base64");
     }
 
 
